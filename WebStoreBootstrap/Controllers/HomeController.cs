@@ -22,29 +22,29 @@ namespace WebStoreBootstrap.Controllers
         {
             iWorker = IWorker;
         }
-      //public string Index()
-      //{
-      //    return iWorker.GetDataWorker(1).Name;
-      //}
-      //public JsonResult Details()
-      //{
-      //    Worker model = iWorker.GetDataWorker(4);
-      //    return Json(model);
-      //}
+        //public string Index()
+        //{
+        //    return iWorker.GetDataWorker(1).Name;
+        //}
+        //public JsonResult Details()
+        //{
+        //    Worker model = iWorker.GetDataWorker(4);
+        //    return Json(model);
+        //}
 
-      //public ViewResult Index()
-      //{
+        //public ViewResult Index()
+        //{
 
-      //    Worker model = iWorker.GetDataWorker(1);
-      //    return View(model);
-      //}
-     
-      //public ViewResult Index()
-      //{
-      //   Worker model = iWorker.GetDataWorker(2);
+        //    Worker model = iWorker.GetDataWorker(1);
+        //    return View(model);
+        //}
 
-      //   return View(model);
-      //}
+        //public ViewResult Index()
+        //{
+        //   Worker model = iWorker.GetDataWorker(2);
+
+        //   return View(model);
+        //}
         //public ViewResult Details()
         //{
         //   Worker model = iWorker.GetDataWorker(2);
@@ -55,26 +55,28 @@ namespace WebStoreBootstrap.Controllers
         //      ViewBag.Worker = model;
         //   return View(model);
         //}
+        [Route("")]
+        [Route("Home")]
+        [Route("Home/Index")]
         public ViewResult Index()
         {
             var model = iWorker.GetAll();
 
             return View(model);
         }
-        public ViewResult Details()
+        [Route("Home/Details/{id?}")]
+        public ViewResult Details(int? id)
         {
-            Worker model = iWorker.GetDataWorker(2);
+            //Worker model = iWorker.GetDataWorker(id);
 
             ViewDetails details = new ViewDetails();
-            details.worker = iWorker.GetDataWorker(1);
+            details.worker = iWorker.GetDataWorker(id?? 1);
             details.Titulo = "LISTA WORKER View Models";
             details.SubTitulo = "XXXXXXXXXX";
             return View(details);
         }
 
-        //[Route("")]
-        //[Route("Home")]
-        //[Route("Home/Index")]
+       
         //public ViewResult Index (int id)
         //{
         //    var modelo = Worker.IWorker.DameTodosLosWorker();

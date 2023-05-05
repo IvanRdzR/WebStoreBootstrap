@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Builder;
 using WebStoreBootstrap.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -39,9 +38,10 @@ if (!app.Environment.IsDevelopment())
 //           new { controller = "Home", action = "Index" }  // Parameter defaults
 //       );
 app.UseStaticFiles();
-app.UseMvcWithDefaultRoute();
-app.UseDefaultFiles();
+//app.UseMvcWithDefaultRoute();
+app.UseMvc();
 
+app.UseDefaultFiles();
 
 app.UseRouting();
 
