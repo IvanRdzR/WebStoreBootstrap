@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zu4Mf8iRhh+tr3PEcmLMz+7uvQW+j+zXC3uHvTFvADCmc2LUp+hjxA+ZFSe1bnoKGfnqsIoqaZleZjHIpKjf7A==",
+  "dgSpecHash": "QqdYGHkTjBZWYY+h89rnbnJQdW3RZfz4tsEOFDccOfiPMwJwhWC1YFB/RzsGvM7rkc+mD8lBwWDPZt7aAuhX8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivan_\\source\\repos\\WebStoreBootstrap\\WebStoreBootstrap\\WebStoreBootstrap.csproj",
+  "projectFilePath": "C:\\Users\\ivan_\\Source\\Repos\\IvanRdzR\\WebStoreBootstrap\\WebStoreBootstrap\\WebStoreBootstrap.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivan_\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\ivan_\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

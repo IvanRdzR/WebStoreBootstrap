@@ -14,6 +14,11 @@
 
         }
 
+        public List<Worker> GetAll()
+        {
+            return listWorker;
+        }
+
         public Worker GetDataWorker(int id)
         {
             return this.listWorker.FirstOrDefault(lw => lw.Id == id);

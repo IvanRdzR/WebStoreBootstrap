@@ -1,12 +1,19 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model WebStoreBootstrap.ViewModels.ViewDetails
+
 @{
+    
+    ViewBag.Title = "Worker Details";
 }
-<html>
-    <head>
-        <body>
-            Details View
-        </body>
-    </head>
-</html>
+
+    <h3>@Model.Titulo</h3>
+    <h2>@Model.SubTitulo</h2>
+
+    <div>Name:@Model.worker.Name</div>
+    <div>Age:@Model.worker.Age</div>
+    <div>Phone:@Model.worker.Phone</div>
+    <div>State:@Model.worker.State</div>
+    
+    @section Scripts
+    {
+        <script src="~/js/site.js"></script>
+    }

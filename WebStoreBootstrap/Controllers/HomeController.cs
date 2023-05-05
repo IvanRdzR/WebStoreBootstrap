@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Reflection;
 using WebStoreBootstrap.Models;
+using WebStoreBootstrap.ViewModels;
 
 namespace WebStoreBootstrap.Controllers
 {
@@ -21,30 +22,54 @@ namespace WebStoreBootstrap.Controllers
         {
             iWorker = IWorker;
         }
-        public string Index()
+      //public string Index()
+      //{
+      //    return iWorker.GetDataWorker(1).Name;
+      //}
+      //public JsonResult Details()
+      //{
+      //    Worker model = iWorker.GetDataWorker(4);
+      //    return Json(model);
+      //}
+
+      //public ViewResult Index()
+      //{
+
+      //    Worker model = iWorker.GetDataWorker(1);
+      //    return View(model);
+      //}
+     
+      //public ViewResult Index()
+      //{
+      //   Worker model = iWorker.GetDataWorker(2);
+
+      //   return View(model);
+      //}
+        //public ViewResult Details()
+        //{
+        //   Worker model = iWorker.GetDataWorker(2);
+
+        //   ViewData["Header"] = "LISTA WORKER ViewData";
+        //   ViewData["Worker"] = model;
+        //      ViewBag.Titulo = "LISTA WORKER ViewBag";
+        //      ViewBag.Worker = model;
+        //   return View(model);
+        //}
+        public ViewResult Index()
         {
-            return iWorker.GetDataWorker(1).Name;
+            var model = iWorker.GetAll();
+
+            return View(model);
         }
-        //public JsonResult Details()
-        //{
-        //    Worker model = iWorker.GetDataWorker(4);
-        //    return Json(model);
-        //}
-
-        //public ViewResult Index()
-        //{
-
-        //    Worker model = iWorker.GetDataWorker(1);
-        //    return View(model);
-        //}
         public ViewResult Details()
         {
             Worker model = iWorker.GetDataWorker(2);
 
-            //ViewData["Lista Worker"] = "LISTA WORKER";
-            //ViewData["Worker"] = model;
-
-            return View(model);
+            ViewDetails details = new ViewDetails();
+            details.worker = iWorker.GetDataWorker(1);
+            details.Titulo = "LISTA WORKER View Models";
+            details.SubTitulo = "XXXXXXXXXX";
+            return View(details);
         }
 
         //[Route("")]

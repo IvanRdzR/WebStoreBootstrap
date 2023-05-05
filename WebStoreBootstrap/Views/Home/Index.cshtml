@@ -1,11 +1,30 @@
-﻿<html>
-    <head>
-        <body>
-            Index View
-        </body>
-    </head>
-</html>
+﻿@model List<WebStoreBootstrap.Models.Worker>
 
+@{
+    
+    ViewBag.Title = "Worker Details";
+}
+<table>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>State</th>
+            </tr>
+            <tr>
+                @foreach(var worker in Model)
+                {                                
+                    <tr>
+                        <td>@worker.Id</td>
+                        <td>@worker.Name</td>
+                        <td>@worker.Age</td>
+                        <td>@worker.Phone</td>
+                        <td>@worker.State</td>
+                    </tr>  
+                }
+           </tr>
+</table>
 
 @*@model List<Worker>
 

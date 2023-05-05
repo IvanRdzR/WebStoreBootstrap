@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="MisVistas\" />
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 

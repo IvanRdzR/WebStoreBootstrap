@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivan_\\source\\repos\\WebStoreBootstrap\\WebStoreBootstrap\\WebStoreBootstrap.csproj": {}
+    "C:\\Users\\ivan_\\Source\\Repos\\IvanRdzR\\WebStoreBootstrap\\WebStoreBootstrap\\WebStoreBootstrap.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivan_\\source\\repos\\WebStoreBootstrap\\WebStoreBootstrap\\WebStoreBootstrap.csproj": {
+    "C:\\Users\\ivan_\\Source\\Repos\\IvanRdzR\\WebStoreBootstrap\\WebStoreBootstrap\\WebStoreBootstrap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivan_\\source\\repos\\WebStoreBootstrap\\WebStoreBootstrap\\WebStoreBootstrap.csproj",
+        "projectUniqueName": "C:\\Users\\ivan_\\Source\\Repos\\IvanRdzR\\WebStoreBootstrap\\WebStoreBootstrap\\WebStoreBootstrap.csproj",
         "projectName": "WebStoreBootstrap",
-        "projectPath": "C:\\Users\\ivan_\\source\\repos\\WebStoreBootstrap\\WebStoreBootstrap\\WebStoreBootstrap.csproj",
+        "projectPath": "C:\\Users\\ivan_\\Source\\Repos\\IvanRdzR\\WebStoreBootstrap\\WebStoreBootstrap\\WebStoreBootstrap.csproj",
         "packagesPath": "C:\\Users\\ivan_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivan_\\source\\repos\\WebStoreBootstrap\\WebStoreBootstrap\\obj\\",
+        "outputPath": "C:\\Users\\ivan_\\Source\\Repos\\IvanRdzR\\WebStoreBootstrap\\WebStoreBootstrap\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
